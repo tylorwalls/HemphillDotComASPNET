@@ -1,0 +1,17 @@
+Contact Us
+
+This is the contact us description.
+
+# Contact Us
+
+<div class="units-row">
+    
+    <div class="unit-40">
+        {{block:contact/contact-left}}
+    </div>
+
+    <div class="unit-60">
+        {{block:contact/contact-right}}        
+    </div>
+
+</div>

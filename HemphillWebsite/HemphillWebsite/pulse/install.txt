@@ -1,0 +1,52 @@
+
+*** How to install Pulse CMS ***
+
+UPLOAD
+
+
+
+Unzip pulse.zip and upload the all the files/folders inside to the root of your domain. Do not upload the "pulse" folder itself, just the files/folders inside of it. However, if you wish to install into a sub-folder for development, then you can upload the whole package as domain.com/pulse.
+
+
+
+CONFIG
+
+
+
+Edit config.php to set your options/password. If you did install into a sub-folder, you will need to change the path setting here.
+
+
+
+DONE
+
+
+
+Go to: yoursite.com/admin and login to begin using. The default password is "demo".
+
+
+
+
+*************************************************************************
+
+
+
+
+NOTES:
+
+
+
+Some computers hide files that start with "." so the .htaccess file may not have been uploaded when you installed. In this case upload the sample.htaccess then rename to just .htaccess on your server.
+
+
+
+Here is a short video that shows the install process: Pulse 4.0 Installation: 
+https://www.youtube.com/watch?v=ijHH6FHwm2Y&feature=youtu.be
+
+
+
+To modify the exiting frontend template or import your own, go to the "template" folder. See docs for more detail on using and editing the template system:
+http://www.pulsecms.com/docs/template
+
+
+
+If you have trouble saving content or settings, check permissions on the content folder and the config.php file. As a general rule, permissions for folders should be set as 755 and files 644.

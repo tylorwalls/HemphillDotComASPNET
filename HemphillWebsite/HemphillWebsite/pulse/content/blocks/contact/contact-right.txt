@@ -1,0 +1,7 @@
+<p>
+	<strong>Address:</strong><br>
+        44 Smith St
+	<br>
+        New York, NY 10034
+</p>
+<img src="content/media/map.jpg" alt="Map">

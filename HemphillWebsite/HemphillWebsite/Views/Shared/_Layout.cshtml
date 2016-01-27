@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemphill, LLC</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <link rel="stylesheet" href="~/Content/custom.css">
+    <link rel="stylesheet" href="~/Content/bpHS.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink(" ", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Towers<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("The Tower Company", "Index", "Tower")</li>
+                            <li role="separator" class="divider"></li>
+                            <li>@Html.ActionLink("WBTS", "WBTS", "Tower")</li>
+                            <li>@Html.ActionLink("Leasing", "Leasing", "Tower")</li>
+                            <li>@Html.ActionLink("Tower Modification", "TowerMod", "Tower")</li>
+                            <li>@Html.ActionLink("Construction", "Construction", "Tower")</li>
+                            <li>@Html.ActionLink("Manufacturing", "Manufacturing", "Tower")</li>
+                            <li>@Html.ActionLink("Collocation Hardware", "CollocationHW", "Tower")</li>
+                            <li>@Html.ActionLink("Polaris BPM", "PolarisBPM", "Tower")</li>
+                            <li role="separator" class="divider"></li>
+                            <li>@Html.ActionLink("Guyed Towers", "Guyed", "Tower")</li>
+                            <li>@Html.ActionLink("Self Support Towers", "SelfSupport", "Tower")</li>
+                            <li>@Html.ActionLink("Monopoles", "Monopole", "Tower")</li>
+                            <li>@Html.ActionLink("Mini Sites", "MiniSite", "Tower")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Real Estate", "RealEstate", "Services")</li>
+                            <li>@Html.ActionLink("Solar", "Solar", "Services")</li>
+                            <li>@Html.ActionLink("Fiber", "Fiber", "Services")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Store<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Store", "Index", "Store")</li>
+                            <li>@Html.ActionLink("Customer Portal", "CustomerPortal", "Store")</li>
+                            <li>@Html.ActionLink("Collocation Hardware", "CollocationHW", "Store")</li>
+                            <li>@Html.ActionLink("Tower Mini Site", "MiniSite", "Store")</li>
+                            <li>@Html.ActionLink("SuperLight Tower", "SuperLight", "Store")</li>
+                            <li>@Html.ActionLink("Solar", "Solar", "Store")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Hemphill<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Legacy", "Legacy", "About")</li>
+                            <li>@Html.ActionLink("Services Overview", "Overview", "About")</li>
+                            <li>@Html.ActionLink("Contact", "Contact", "About")</li>
+                        </ul>
+                    </li>
+                    <li><a href="http://polarisbpm.hemphill.com">PolarisBPM</a></li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr style="clear:both"/>
+        <footer style="clear:both">
+            <p>&copy; @DateTime.Now.Year - Hemphill, LLC</p>
+        </footer>
+    </div>
+
+
+</body>
+</html>

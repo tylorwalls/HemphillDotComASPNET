@@ -1,0 +1,5 @@
+The blog title
+
+The blog page meta description.
+
+{{blog}}

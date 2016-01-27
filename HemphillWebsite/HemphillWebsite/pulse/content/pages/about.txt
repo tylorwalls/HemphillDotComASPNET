@@ -1,0 +1,17 @@
+About Us
+
+This is the about us description.
+
+<h1>About Us</h1>
+
+<div class="units-row">
+    
+    <div class="unit-35">
+        {{block:about/about-left}}
+    </div>
+
+    <div class="unit-65">
+        {{block:about/about-right}}
+    </div>
+
+</div>

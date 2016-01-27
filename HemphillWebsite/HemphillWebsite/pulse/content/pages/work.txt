@@ -1,0 +1,15 @@
+Our Work
+
+Work page description.
+
+# Our Work
+
+Below are some samples of work from recent projects. We hope you enjoy the selection.
+
+### Moutains
+
+{{gal:gallery1}}
+
+### Nature
+
+{{gal:gallery1}}

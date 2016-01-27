@@ -1,0 +1,6 @@
+<p>
+	<img src="content/media/old-sign.jpg" alt="Old Sign"></p><p>
+	Thanks for taking the time to learn more about us. Here is a little
+about who we are and what we can do for you. Feel free to 
+	<a href="contact">contact</a> us with any questions.
+</p>

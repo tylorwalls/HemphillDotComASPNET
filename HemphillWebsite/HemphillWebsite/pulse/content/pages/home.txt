@@ -1,0 +1,15 @@
+Acme Inc. Home
+
+The acme inc home page description.
+
+<style>
+#header {
+    background-image: url('content/media/office.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 350px;
+}
+</style>
+
+{{block:home/home}}
